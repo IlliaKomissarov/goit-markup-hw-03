@@ -437,7 +437,6 @@ p {
 .filter {
     list-style: none;
     display: flex;
-    margin: 0 200px;
 }
 
 .filter .item {
