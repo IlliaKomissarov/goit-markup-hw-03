@@ -50,6 +50,7 @@ p {
 
 .top {
     display: flex;
+    align-items: center;
 }
 
 .main-header {
@@ -65,17 +66,13 @@ p {
     font-size: 26px;
     line-height: 1.19;
     text-decoration-line: none;
-    margin-left: 200px;
 }
 
 .header-logo-blue {
     color: var(--accent-color);
 }
 
-.top-menu {
-    display: flex;
-    align-items: center;
-}
+
 
 .nav {
     margin-left: 93px;
@@ -84,6 +81,7 @@ p {
 .navigation-list {
     list-style: none;
     display: flex;
+    margin-left: 50px;
 }
 
 .navigation-item-current {
@@ -96,7 +94,6 @@ p {
     text-decoration-line: none;
     display: block;
     padding: 32px 0;
-    margin-left: 93px;
 }
 
 .navigation-item-port {
@@ -158,7 +155,8 @@ p {
 .contact-list {
     list-style: none;
     display: flex;
-    margin-left: 344px;
+    margin-left:auto;
+    gap: 50px;
 }
 
 .contact-item {
@@ -170,7 +168,6 @@ p {
     text-decoration-line: none;
     display: block;
     padding: 32px 0;
-    margin-right: 50px;
 }
 
 .contact-item:hover,
@@ -195,6 +192,8 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    width: 696px;
+    margin: 0 auto 30px;
 }
 
 .btn {
@@ -212,7 +211,7 @@ p {
     display: block;
     border: 0;
     padding: 10px 32px;
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
     border-radius: 4px;
 }
 
@@ -243,6 +242,7 @@ p {
 
 .features-list {
     list-style: none;
+    gap: 30px;
 }
 
 .title {
@@ -266,8 +266,8 @@ p {
 }
 
 .features-list .item {
-    margin-right: 30px;
     flex-basis: auto;
+    width: 270px;
 }
 
 .features-list .item :last-child {
@@ -275,21 +275,16 @@ p {
 }
 
 .job {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+padding-bottom: 94px;
 }
 
 
 .list-job {
     display: flex;
     list-style: none;
+    gap: 30px;
 }
 
-.list-job .item {
-    margin-right: 30px;
-    margin-bottom: 94px;
-}
 
 .img {
     border-radius: 0px;
@@ -305,7 +300,7 @@ p {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    padding: 94px 0 50px 0;
+    margin-bottom: 50px;
 }
 
 .list-workers {
@@ -316,6 +311,7 @@ p {
 
 .team {
     background: var(--bg-our-color);
+    padding: 94px 0;
 }
 
 .list-workers {
@@ -333,7 +329,6 @@ p {
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     margin-right: 30px;
-    margin-bottom: 94px;
 }
 
 .team-item:last-child {
@@ -348,6 +343,8 @@ p {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
 }
 
 .p-job {
@@ -358,6 +355,7 @@ p {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--prmary-text-color);
+    padding-bottom: 30px;
 }
 
 .footer {
@@ -375,11 +373,13 @@ p {
     text-decoration-line: none;
     display: block;
     margin-bottom: 20px;
-    margin-left: 200px;
 }
 
 .contact-list-footer {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .contact-item-address {
@@ -389,12 +389,12 @@ p {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--white-color);
-    margin-left: 200px
 }
 
-.footer-address .contact-item-address .contact-item-footer+.contact-item-footer {
-    margin-top: 9px;
+.footer-link-address .footer-link{
+    
 }
+
 
 .contact-item-footer {
     font-style: normal;
@@ -402,7 +402,6 @@ p {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    margin-left: 200px
 }
 
 .footer-link-address {
@@ -427,7 +426,9 @@ p {
 
 /* .................PORTFOLIO PAGE................. */
 
-.gallery {}
+.gallery {
+    padding: 94px 0;
+}
 
 .gallery-title {
     display: none;
@@ -439,10 +440,6 @@ p {
     display: flex;
 }
 
-.filter .item {
-    margin-left: 8px;
-    margin-top: 94px;
-}
 
 .filter .item:(:last-child){
 margin-left: 8px;
@@ -453,6 +450,7 @@ margin-left: 8px;
     margin-right: 0;
     margin-bottom: 50px;
     justify-content: center;
+    gap: 8px;
 }
 
 .filter-btn {
@@ -499,24 +497,20 @@ margin-left: 8px;
     
 }
 
-.port-img {
-    flex-basis: calc(100% - 60px)/ 3);
-    
-}
 
-.port-img .item-card:nth-child(3n) {
+.item-card:nth-child(3n) {
     margin-right: 0px;
 }
 
-.port-img .item-card:nth-last-child(-n+3) {
+.item-card:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
 .gallery-list {
     list-style: none;
-    margin-bottom: 94px;
     padding: 0px;
-    
+    flex-wrap: wrap;
+    display: flex;
 }
 
 img {
@@ -531,6 +525,8 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    padding: 20px 0;
 }
 
 .text-port {
@@ -540,5 +536,6 @@ img {
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--prmary-text-color);
+    margin-bottom: 20px;
 }
 
