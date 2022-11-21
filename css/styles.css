@@ -72,11 +72,12 @@ p {
     color: var(--accent-color);
 }
 
-
+.navigation {
+    display: flex;
+}
 
 .nav {
     margin-left: 93px;
-    display: flex;
 }
 
 .navigation-list {
