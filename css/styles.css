@@ -401,12 +401,12 @@ padding-bottom: 94px;
 
 .footer-link-address {
     text-decoration-line: none;
-    color: var(--footer-address-rgba);
+    color: var(--white-color);
 }
 
 .footer-link-address:hover,
 .footer-link-address:focus {
-    color: var(--white-color);
+    color: var(--accent-color);
 }
 
 .footer-link {
